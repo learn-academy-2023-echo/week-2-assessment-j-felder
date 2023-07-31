@@ -23,10 +23,12 @@ const numbersArray2 = [24, 27, 30, 33, 36]
 
 // Pseudo code:
 
+
 // --------------------1) Create a function that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
 
 // a) Create a test with expect statements for each of the variables provided.
-
+// perfectThids will be my function that will accept an object with an array
+//
 const object1 = { number: 15 }
 // Expected output: "15 is divisible by three"
 const object2 = { number: 0 }
@@ -39,18 +41,36 @@ const object3 = { number: -7 }
 // Pseudo code:
 
 // --------------------2) Create a function that takes in an array of words and returns an array with all the words capitalized.
-
+// map a capital letter to the first letter of each array element
+//name a function mapCap
+//
 // a) Create a test with expect statements for each of the variables provided.
 
+// describe("mapCap", () => {
+//     it("capitalizes each element's 0 index", () => {
+//         const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
+//         const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
+//         expect(mapCap(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+//         expect(mapCap(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
+//     })
+// })
+
+//  ReferenceError: mapCap is not defined - good failure
 const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
 // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
-const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
+// const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
 // Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
 
 // b) Create the function that makes the test pass.
 
 // Pseudo code:
+// mapCap need to return the array .map ( value split (index[0].toUpperCase.join) 
 
+const mapCap = (array) => {
+    
+    return array.map(vitamin())
+}
+ console.log()
 // --------------------3) Create a function that takes in a string and logs the index of the first vowel.
 
 // a) Create a test with expect statements for each of the variables provided.
